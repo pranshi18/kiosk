@@ -1,5 +1,3 @@
-console.log('connected');
-
 try {
   var SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
   var recognition = new SpeechRecognition();
@@ -48,7 +46,6 @@ recognition.onresult = function (event) {
     noteContent += transcript;
     noteTextarea.val(noteContent);
     console.log(noteContent)
-    custom.value = noteContent
     custom.html(noteContent)
   }
 };
@@ -81,17 +78,10 @@ $('#micIconID').on('click', function (e) {
 });
 
 
-$('#pauseBTN').on('click', function (e) {
+$('#pauseIconID').on('click', function (e) {
   recognition.stop();
   console.log('Voice recognition paused.');
 });
-
-$('#clearBTN').on('click', function(e){
-    noteContent = '';
-    custom.value = '';
-    custom.html('');
-    recognition.stop();
-})
 
 // Sync the text inside the text area with the noteContent variable.
 noteTextarea.on('input', function () {

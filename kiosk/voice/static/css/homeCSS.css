@@ -1,6 +1,6 @@
 body{
+    background: yellow;
     background: #708690;
-    /* background: yellow; */
 }
 
 
@@ -12,9 +12,6 @@ body{
     border-radius: 0px;
 }
 
-.container{
-    background: #455a64;
-}
 
 
 /* IDs */
@@ -47,29 +44,47 @@ body{
     height: 45%;
 }
 
-#pauseButton{
-    position: absolute;
-    bottom: 50px;
-    left: 45%;
-    height: 5%;
-    width: 10%;
+#textAreaID{
+    position: relative;
+    width: 19%;
 }
 
-#pauseIconID{
-    /* border: 2px solid white; */
+#submitBTN{
+    overflow:hidden;
+    position: absolute;
+    top: 97%;
+    right: 46.5%;
+    width: 7%;
+}
+
+#transcriptForm{
+    background: #1c313a;
+    color: white;
+    border: 0px;
+    align-items: center;
+    text-align: center;
+    width: 30%;
+    position: absolute;
+    bottom: 8%;
+    left: 35%;
+}
+
+.operateButtons{
+    /* border: 2px solid yellow; */
+    position: absolute;
+    display: block;
+    bottom: -10%;
     width: 100%;
 }
 
-#textAreaID{
-    position: relative;
-    top: 1px;
-    width: 20%;
+#pauseBTN{
+    overflow: hidden;
+    width: 7%;
+    right: 50%;
 }
 
-textarea{
-    background: red;
-    position: absolute;
-    width: 50%;
-    top: 20%;
-    /* border: 2px solid black; */
+#clearBTN{
+    overflow: hidden;
+    width: 7%;
+    left: 20%;
 }
